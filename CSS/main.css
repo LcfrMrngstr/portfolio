@@ -22,6 +22,7 @@ body{
     margin: 0;
     padding: 0;
     height: auto;
+    background-color: black;
 }
 header, nav, nav ul{
     margin: 0;
