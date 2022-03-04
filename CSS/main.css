@@ -161,7 +161,7 @@ h1{
         width: 90%;
     }
     nav li{
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     /* vibe image */
