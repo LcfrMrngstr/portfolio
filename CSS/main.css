@@ -105,6 +105,9 @@ h1, h3{
 h1{
     font-size: 40px;
 }
+h3{
+    padding-left: 1%;
+}
 
 /* 2nd section */
 #socials_container{
