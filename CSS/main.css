@@ -1,0 +1,292 @@
+
+/* Reset */
+html{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+h3, span, h1, p, a, h2{
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration:  none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif !important;
+
+}
+ul {
+    list-style:none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: black;
+}
+header, nav, nav ul{
+    margin: 0;
+}
+img, div{
+    margin: 0;
+}
+
+/* Desktop site */
+
+
+header{
+    width: 100%;
+    /* z-index: 10; */
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: #b49191;     /* previously lightgray*/
+    width: 60%;
+    border-radius: 10px;
+    height: 70px;
+    opacity: 70%;
+    z-index: 10;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+    padding: 0;
+}
+ul a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    color: #06202F;
+    font-size: 16px;
+    font-weight: 500;
+    /* font-family: 'Smooch Sans', sans-serif; */
+}
+#middle li{
+    font-size: 17.5px;
+}
+
+/* vibe image */
+
+#vibe_image{
+    width: 100%;
+    z-index: 0;
+    /* position: relative */
+    display: inline-block;
+}
+#image_container {
+    height: 50vw;
+    overflow: hidden;
+    /* z-index: 0; */
+    position: relative
+}
+
+
+#image_text{
+    position: absolute;
+    left: 5%;
+    width: 100%;
+    bottom: 5vw;
+}
+h1, h3{
+    color: white;
+    font-size: 20px;
+    /* font-family: 'Montserrat', sans-serif;} */
+}
+h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+h3{
+    padding-left: 1%;
+}
+
+/* section 2 */
+#section_2{
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    background-color: #061019;
+    /* border-top:#C9193A solid 3px; */
+}
+  
+#section_2 h1, #section_2 h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* outline: 3px dotted #C9193A;
+    outline: 3px dotted #C9193A; */
+    /* border-radius: 10px; */
+}
+
+#empty_container{
+    height:100px;
+    width:100%;
+}
+
+#section_2 > #top{
+    /* padding-top: 100px; */
+    /* margin-top: 30px; */
+    display: grid;
+    grid-template:1fr/ 1fr 1fr;
+
+    border-top:#C9193A dashed 3px;
+    border-bottom:#C9193A dashed 3px;
+}
+
+ #section_2 #bottom{
+    color:white;
+    /* margin-top: 10%; */
+    width: 100%;
+    height: 100px;
+
+    /* border:#C9193A dashed 3px; */
+    background-color:#C9193A;
+ }
+
+ #bottom_container{
+     margin-top: 90px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+/* section 3*/
+#socials_container{
+    background-color: #061019;
+    /* float: top; */
+}
+
+#all_icons_container{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr;
+    height: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.icon_container{
+    /* background-color: white; */
+    border-radius: 50%;
+    display: inline-block;
+    /* margin: auto auto auto auto; */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_container a{
+    color:#C9193A;
+}
+.icon{
+    height: 100px;
+    display: inline-block;
+}
+
+#insta_container{
+    grid-column: 2/3;
+}
+
+
+
+
+/* Mobile website */
+
+@media all and (max-width: 700px){
+    /* nav bar */
+    nav{
+        width: 90%;
+    }
+    nav li{
+        font-size: 14px !important;
+    }
+
+    /* vibe image */
+    #image_container{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #vibe_image{
+        height: 500px;
+        width: 1000px;
+
+    }
+    #image_text{
+        bottom: 30%;
+    }
+    #image_text h1{
+        font-size: 30px;
+    }
+
+    /* 3 section */
+    #socials_container h2{
+        font-size: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+    #all_icons_container{
+        padding-top: 50px;
+        grid-template: 1fr/ 1fr 1fr 1fr;
+    }
+    #insta_container{
+        grid-column: auto;
+    }
+
+    /* Section 2*/
+    #section_2>#top>h1, #section_2>#top>h2{
+        font-size: 20px;
+    }
+    #empty_container{
+        height: 50px;
+    }
+    #bottom_container{
+        margin-top: 40px;
+        padding: 0;
+    }
+
+}
+
+/* Interations */
+
+/* nav bar */
+nav a:hover{
+    background-color: #856f6f; 
+    color: black;
+
+    animation: nav_zoom;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+#corner_left:hover{
+    border-radius: 10px 0 0 10px;
+}
+#corner_right:hover{
+    border-radius: 0 10px 10px 0;
+}
+
+/* social media icons */
+.icon_container a:hover{
+    color:#92132b;
+}
