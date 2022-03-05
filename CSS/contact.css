@@ -1,0 +1,320 @@
+
+/* Reset */
+html{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+h3, span, h1, p, a, h2, input, textarea{
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration:  none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Smooch Sans', sans-serif !important;
+    color: white;
+
+
+}
+ul {
+    list-style:none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    background-color: black;
+}
+header, nav, nav ul{
+    margin: 0;
+}
+img, div{
+    margin: 0;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    /* z-index: 10; */
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: #eedfdf;     /* previously lightgray*/
+    width: 60%;
+    border-radius: 10px;
+    height: 70px;
+    opacity: 70%;
+    z-index: 10;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+    padding: 0;
+}
+ul a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    color: #06202F;
+    font-size: 16px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+#middle li{
+    font-size: 17.5px;
+}
+
+/* Contact section */
+#main{
+    background-color: #06202F;
+    width: 70%;
+    height: 900px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+
+form{
+    position: absolute;
+    height: 700px;
+    margin-top: 150px;
+    width: 95%;
+    background-color: #041118;
+    border-radius: 20px;
+    height: 80%;
+
+    display: grid;
+    grid-template:  repeat(8, 1fr)/ 1fr;
+
+}
+form input, textarea{
+    border-radius: 10px;
+    margin-left: 3%;
+    color: black;
+    display: inline;
+
+}
+form h1, form span{
+    display: flex;
+    align-items: center;
+    /* color:#C9193A; */
+
+}
+
+form h1{
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#C9193A;
+
+}
+form>span{
+    padding-left: 5%;
+}
+
+#about{
+    height: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+#message{
+    width: 80%;
+    height: 200px;
+}
+#email{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+
+}
+#submit_container{
+    margin-left: 5%;
+}
+#submit_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #C9193A;
+}
+
+
+/* Right side section */
+#right_section{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 30%;
+    height: 900px;
+    background-color: #C9193A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social_media_container, #cv_container{
+    /* height: 45%; */
+    background-color:#a8122d;
+    width: 90%;
+    border-radius: 15px;
+}
+#social_media_container{
+    height:70%;
+}
+
+#right_section h2{ font-weight: bold; margin-bottom: 50px}
+
+#right_section h2, #right_section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 20px;
+}
+
+#cv_container h2{
+    margin: 0;
+}
+
+#social_icons{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#right_section a{
+    height: 100px;
+    color:#06202F;
+    background-color: white;
+    width: 95px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* The above layout remains alright until about the screen is 800px wide */
+
+
+
+
+#corner_left:hover{
+    border-radius: 10px 0 0 10px;
+}
+#corner_right:hover{
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* Mobile site */
+@media all and (max-width: 800px){
+
+    #main{
+        width: 100%;
+    }
+    #right_section{
+        display: block;
+        position: static;
+        width: 100%
+    }
+    form span{
+        justify-content: center;
+    }
+    form input, form textarea, form span, #submit_container{
+        margin: 0 auto 0 auto;
+        padding: 0;
+    }
+
+    #right_section{
+        display: grid;
+        grid-template: 80px 300px/1fr;
+        height: auto;
+    }
+    #right_section section{
+        width: 100%;
+        border-radius: 0;
+        display: flex;
+    }
+    #cv_container h2{
+        margin:0;
+    }
+    #cv_container{
+        grid-row: 1/2;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        width: 95% !important;
+        border-radius: 10px !important;
+        justify-self: center;
+    }
+
+    #social_icons{
+        flex-direction: row;
+    }
+    #social_media_container{
+        flex-direction: column;
+        height: 300px
+    }
+    #social_media_container> h2{
+        margin: 0;
+    }
+
+    nav li, #middle li{
+        font-size: 16px !important;
+    }
+    nav{
+        width: 90%;
+    }
+
+    #about, #message, #email{
+        width: 90%;
+    }
+
+    #right_section a{
+        height: 60px;
+        color:#06202F;
+        background-color: white;
+        width: 50px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+/* Interactions */
+nav a:hover{
+    background-color: #a09393; 
+    color: black;
+
+    animation: nav_zoom;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+#cv_container:hover, #submit_button:hover{
+    background-color:#851026 ;
+    cursor: pointer;
+}
+
+#social_icons a:hover{
+    background-color: rgb(221, 221, 221);
+}

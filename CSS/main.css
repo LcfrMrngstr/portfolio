@@ -100,10 +100,11 @@ ul li{
 h1, h3{
     color: white;
     font-size: 20px;
-    font-family: 'Satisfy', cursive;
+    /* font-family: 'Montserrat', sans-serif;} */
 }
 h1{
     font-size: 40px;
+    font-weight: 100;
 }
 h3{
     padding-left: 1%;
@@ -130,8 +131,8 @@ h3{
     padding-top: 10%;
     padding-bottom: 50px;
     color: white;
-}
- */
+} */
+
 .icon_container{
     /* background-color: white; */
     border-radius: 50%;
