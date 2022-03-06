@@ -515,6 +515,7 @@ h3{
     #about .text_area{
         height: 200px;
         background-color: #92132B;
+        flex: space-around;
     }
 
     #about .text_area p{
