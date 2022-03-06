@@ -502,7 +502,7 @@ h3{
         height: 400px;
         width: 90%;
         flex-direction: column;
-        justify-content: space-around;
+/*         justify-content: space-around; */
     }
 
     #about .about_title{
@@ -515,6 +515,7 @@ h3{
     #about .text_area{
         height: 200px;
         background-color: #92132B;
+        justify-content: none;
     }
 
     #about .text_area p{
