@@ -200,7 +200,7 @@ h3{
     background-color:#04080e;
     height: 500px;
     border-radius: 20px;
-    border:#92132B solid 2px;
+    border:#92132B solid 4px;
     padding-right: 10px;
 
 
@@ -285,7 +285,7 @@ h3{
     justify-content: space-around;
     align-items: center;
     position: relative;
-    border-top:#92132B solid 2px;
+/*     border-top:#92132B solid 2px; */
     border-bottom:#92132B solid 2px;
 }
 
