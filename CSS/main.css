@@ -238,8 +238,8 @@ h3{
 #wrapper{
     display: flex;
     /* text-align: center; */
-    width: 200%;
-    transform: translateX(-20%);
+    width: 110%;
+    transform: translateX(-2%);
     overflow: hidden;
 }
 
