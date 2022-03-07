@@ -90,6 +90,7 @@ ul li{
 #image_container {
     height: 50vw;
     overflow: hidden;
+    overflow-x: visible;
     /* z-index: 0; */
     position: relative;
 }
