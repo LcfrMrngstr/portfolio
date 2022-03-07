@@ -1,9 +1,9 @@
 
 /* Reset */
 
-*{
+body, html{
     overflow-x: hidden;
-}
+} 
 html{
     height: auto;
     width: 100%;
