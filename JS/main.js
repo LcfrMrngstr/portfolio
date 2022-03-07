@@ -7,7 +7,7 @@ var count  = 0;
 var word_string = '';
 var this_word;
 
-while( count<200 ){
+while( count<500 ){
 
     //Getting a random number
     var rand_int = Math.floor((Math.random()*5)+1);
