@@ -599,7 +599,7 @@ h3{
     }
 
     #repeat_word_container span{
-        font-size: 15px;
+        font-size: 15px !important;
     }
     #wrapper{
         width: 180%;
