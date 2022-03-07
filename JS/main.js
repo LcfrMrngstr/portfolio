@@ -24,4 +24,4 @@ while( count<200 ){
 console.log(word_string)
 
 //Inserting the string into the html
-document.querySelector('#repeat_word_container').innerText = word_string
+document.querySelector('#repeat_word_container #wrapper').innerText = word_string
