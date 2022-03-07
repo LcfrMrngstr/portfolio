@@ -1,7 +1,8 @@
 
 
 // Creating a repepating text background for the skills section
-const word_list = [ 'javascript', 'python', 'html', 'css', 'mongodb', 'java'];
+const word_list = [ '<span>javascript</span>', '<span>python</span>', '<span>html</span>', '<span>css</span>', '<span>mongodb</span>', '<span>java</span>'];
+
 
 var count  = 0;
 var word_string = '';
@@ -24,4 +25,4 @@ while( count<500 ){
 console.log(word_string)
 
 //Inserting the string into the html
-document.querySelector('#repeat_word_container #wrapper').innerText = word_string
+document.querySelector('#repeat_word_container #wrapper').innerHTML = '<p>'+word_string+'</p>'
